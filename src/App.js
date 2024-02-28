@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Checkout from './Components/Checkout';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
           </>}>
           </Route>
 
-          <Route path='/login' element={<h1>login</h1>}></Route>
+          <Route path='/login' element={<>
+            <Login />
+          </>}></Route>
 
           <Route path='/' element={<>
             <Header />
