@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useStateValue } from './StateProvider'
 
 function Header() {
+    const [{ basket }] = useStateValue();
+
     return (
         <>
             <nav className='flex w-full bg-black items-center sticky top-0 z-100'>
@@ -48,7 +51,7 @@ function Header() {
                     <Link to="/checkout" className='text-white no-underline'>
                         <div className='flex'>
                             <i class="fa-solid fa-basket-shopping"></i>
-                            <span className='mx-2.5'>0</span>
+                            <span className='mx-2.5'>{basket?.length}</span>
                         </div>
                     </Link>
                 </div>
