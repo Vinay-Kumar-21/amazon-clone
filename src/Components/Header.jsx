@@ -26,7 +26,7 @@ function Header() {
                     {/* 1st link */}
                     <Link to='/login' className='text-white no-underline'>
                         <div className='flex flex-col mx-2.5'>
-                            <span className='text-xs'>Hello Vk</span>
+                            <span className='text-xs'>Hello</span>
                             <span className='text-sm font-extrabold'>Sign In</span>
                         </div>
                     </Link>
